@@ -237,6 +237,195 @@ pip install darts
 pip install gluonts
 ```
 
+#### Chronos (Amazon) ⭐ NEW 2024-2025
+
+**Description**: Foundation models for time series forecasting
+- **GitHub**: https://github.com/amazon-science/chronos-forecasting
+- **Key Features**:
+  - Zero-shot forecasting capabilities
+  - Pre-trained on diverse time series data
+  - Based on T5 transformer architecture
+  - **Chronos-Bolt** (Nov 2024): 5% lower error, 250x faster, 20x more memory efficient
+  - **Chronos-2** (2025): Multivariate and covariate-informed forecasting
+  - Available on Amazon SageMaker JumpStart (Feb 2025)
+
+**Installation**:
+```bash
+pip install chronos-forecasting
+```
+
+**Example**:
+```python
+from chronos import ChronosPipeline
+import torch
+
+# Load pre-trained model
+pipeline = ChronosPipeline.from_pretrained(
+    "amazon/chronos-t5-small",
+    device_map="cuda",
+    torch_dtype=torch.bfloat16,
+)
+
+# Zero-shot forecast
+forecast = pipeline.predict(
+    context=historical_data,
+    prediction_length=12
+)
+```
+
+#### Nixtla TimeGPT ⭐ NEW 2024-2025
+
+**Description**: First foundation model for time series forecasting
+- **GitHub**: https://github.com/Nixtla/nixtla
+- **Website**: https://www.nixtla.io/
+- **Key Features**:
+  - Trained on 100B+ data points from finance, weather, energy, web data
+  - Production-ready generative pre-trained transformer
+  - Zero-shot forecasting and anomaly detection
+  - Handles retail, electricity, finance, IoT domains
+  - Available via API or self-hosted
+
+**Installation**:
+```bash
+pip install nixtla
+```
+
+**Example**:
+```python
+from nixtla import NixtlaClient
+
+# Initialize client
+nixtla_client = NixtlaClient(api_key='your_api_key')
+
+# Forecast
+forecast = nixtla_client.forecast(
+    df=df,
+    h=12,
+    time_col='timestamp',
+    target_col='value'
+)
+```
+
+#### NeuralForecast (Nixtla) ⭐ NEW 2024-2025
+
+**Description**: Deep learning time series forecasting library
+- **GitHub**: https://github.com/Nixtla/neuralforecast
+- **PyPI**: https://pypi.org/project/neuralforecast/ (Latest: v3.1.2, Oct 2025)
+- **Models**:
+  - LSTM, GRU, RNN variants
+  - N-BEATS, N-HiTS
+  - Transformers (TFT, Informer, Autoformer)
+  - MLP-based models
+  - Ensemble methods
+
+**Installation**:
+```bash
+pip install neuralforecast
+```
+
+**Example**:
+```python
+from neuralforecast import NeuralForecast
+from neuralforecast.models import NBEATS, NHITS
+from neuralforecast.utils import AirPassengersDF
+
+# Define models
+models = [NBEATS(input_size=24, h=12, max_steps=100),
+          NHITS(input_size=24, h=12, max_steps=100)]
+
+# Fit and predict
+nf = NeuralForecast(models=models, freq='M')
+nf.fit(df=AirPassengersDF)
+forecasts = nf.predict()
+```
+
+#### StatsForecast (Nixtla) ⭐ NEW 2024-2025
+
+**Description**: Lightning-fast statistical forecasting
+- **GitHub**: https://github.com/Nixtla/statsforecast
+- **Key Features**:
+  - First library to efficiently forecast millions of time series
+  - Optimized AutoARIMA implementation
+  - 10x-100x faster than traditional implementations
+  - Includes ETS, Theta, CES, and more
+
+**Installation**:
+```bash
+pip install statsforecast
+```
+
+**Example**:
+```python
+from statsforecast import StatsForecast
+from statsforecast.models import AutoARIMA, AutoETS
+
+# Define models
+models = [AutoARIMA(season_length=12),
+          AutoETS(season_length=12)]
+
+# Fit and forecast
+sf = StatsForecast(models=models, freq='M', n_jobs=-1)
+forecasts = sf.forecast(h=12)
+```
+
+### Reinforcement Learning ⭐ NEW 2024-2025
+
+#### Stable-Baselines3
+
+**Description**: Reliable implementations of RL algorithms
+- **GitHub**: https://github.com/DLR-RM/stable-baselines3
+- **Documentation**: https://stable-baselines3.readthedocs.io/
+- **Algorithms**: PPO, A2C, SAC, TD3, DQN
+- **Use Cases**:
+  - Inventory management policies
+  - Dynamic pricing
+  - Route optimization
+  - Production scheduling
+
+**Installation**:
+```bash
+pip install stable-baselines3
+```
+
+**Example**:
+```python
+from stable_baselines3 import PPO
+import gym
+
+# Create environment
+env = gym.make('InventoryManagement-v0')
+
+# Train agent
+model = PPO('MlpPolicy', env, verbose=1)
+model.learn(total_timesteps=100000)
+
+# Use trained policy
+obs = env.reset()
+action, _states = model.predict(obs)
+```
+
+#### Ray RLlib
+
+**Description**: Scalable reinforcement learning library
+- **GitHub**: https://github.com/ray-project/ray
+- **Documentation**: https://docs.ray.io/en/latest/rllib/
+- **Features**:
+  - Multi-agent RL support
+  - Distributed training
+  - Production deployment
+  - Integration with major frameworks
+
+**Installation**:
+```bash
+pip install ray[rllib]
+```
+
+**Use Cases for Supply Chain**:
+- Multi-agent inventory optimization
+- Distributed warehouse control
+- Fleet coordination
+- Supply network optimization
+
 ### Machine Learning
 
 #### scikit-learn
@@ -673,4 +862,4 @@ pip install dask
 
 ---
 
-**Last Updated**: October 2025
+**Last Updated**: November 2025

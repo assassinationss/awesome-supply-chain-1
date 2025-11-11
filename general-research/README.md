@@ -466,33 +466,90 @@ Core research topics and methodologies applicable across all industry verticals.
 ### 1. Artificial Intelligence in Supply Chain
 
 **Topics**:
-- Autonomous decision-making
-- Generative AI applications
+- Autonomous decision-making and agentic AI
+- Generative AI applications (ChatGPT, LLMs for planning)
+- Foundation models for time series forecasting
 - Explainable AI (XAI)
 - Federated learning
 - Neural architecture search
+- Multi-agent reinforcement learning
 
 **Applications**:
-- Automated planning
-- Intelligent forecasting
+- Automated planning and autonomous orchestration
+- Intelligent forecasting with pre-trained models
 - Smart procurement
 - Dynamic pricing
 - Anomaly detection
+- Cognitive supply chains
+
+**Recent Papers (2024-2025)**:
+
+1. **"Examining the integration of artificial intelligence in supply chain management from Industry 4.0 to 6.0"** (Frontiers in AI, 2024)
+   - Systematic literature review of 383 peer-reviewed articles (2017-2024)
+   - Focus on improving operational efficiency, human-centric collaboration, sustainability
+   - Thematic analysis of AI-driven applications: logistics optimization, demand forecasting, risk mitigation
+
+2. **"Revolutionizing Supply Chains: Unleashing the Power of AI-Driven Intelligent Automation"** (MDPI Information, 2025)
+   - Real-time information flow and intelligent automation
+   - Integration of IoT, AI, and blockchain technologies
+
+3. **"Machine learning in supply chain management: systematic literature review"** (International Journal of Production Research, 2025)
+   - Review of 107 ML studies (2019-2023)
+   - Four major themes: demand forecasting, procurement, risk & resilience, network optimization
+   - Demand forecasting attracted most applications, followed by inventory and transportation
+
+4. **"Predictive Analytics in Supply Chain Management: The Role of AI and Machine Learning"** (Advances in Consumer Research, 2024)
+   - Focus on mitigating uncertainties and optimizing inventory management
+   - Comprehensive review of peer-reviewed articles, conference papers, white papers (2015-2024)
 
 ### 2. Sustainability & Climate Change
 
 **Topics**:
 - Net-zero supply chains
 - Climate risk modeling
-- Circular economy
+- Circular economy and closed-loop supply chains
 - Sustainable finance
 - Science-based targets
+- Critical materials for clean energy transition
 
 **Research Questions**:
 - How to measure Scope 3 emissions?
 - Trade-offs between cost and carbon?
 - Optimal circular supply chain design?
 - Impact of carbon pricing?
+- How to ensure resilient supply of critical materials?
+
+**Recent Papers (2024-2025)**:
+
+1. **"The impact of circular economy practices on sustainable logistics performance"** (International Journal of Logistics Management, February 2025)
+   - Examines sustainable logistics performance in Ireland's economy
+   - Focus on circular economy implementation in logistics operations
+
+2. **"Circular economy strategies in supply chain management: an evaluation framework for airport operators"** (Frontiers in Sustainability, March 2025)
+   - Transforming from "take-make-dispose" to resource efficiency
+   - Framework for evaluating CE strategies in complex operations
+
+3. **"Establishing resilient and sustainable supply chain of critical materials for a low‑carbon future"** (Journal of Cleaner Production, 2025)
+   - Critical raw materials: lithium, cobalt, rare earth elements
+   - Essential for clean energy technologies (batteries, wind turbines, solar panels)
+   - Balancing supply security with environmental impact minimization
+
+4. **"Circular economy perspectives: challenges, innovations, and sustainable futures"** (Discover Sustainability, 2025)
+   - Systematic PRISMA review of 111 articles (2017-2025)
+   - Thematic analysis of CE challenges, innovations, and future directions
+
+5. **"Digital innovation for circular supply chain sustainability and resilience for achieving carbon neutrality"** (Journal of Environmental Management, May 2025)
+   - Digital technologies enhancing circular supply chain transparency
+   - Focus on achieving carbon neutrality in developing countries
+
+6. **"Squaring circular supply chain management: A comprehensive overview"** (Business Strategy and the Environment, August 2024)
+   - Revolutionary integration of circular principles into SCM
+   - Comprehensive bibliometric and content analysis
+   - Developed rapidly in last 5 years
+
+7. **"Barriers to product return in a circular supply chain: a case from a retailing industry"** (Annals of Operations Research, 2025)
+   - Product return management crucial for circular supply chains
+   - Explores barriers within circular supply chain contexts
 
 ### 3. Resilience & Disruption Management
 
@@ -502,13 +559,31 @@ Core research topics and methodologies applicable across all industry verticals.
 - Climate disruptions
 - Cyber threats
 - Supply chain security
+- Anti-fragile systems
 
 **Research Areas**:
-- Resilience metrics
-- Redundancy vs. efficiency
+- Resilience metrics and benchmarking
+- Redundancy vs. efficiency trade-offs
 - Diversification strategies
 - Rapid recovery mechanisms
-- Digital twins for risk
+- Digital twins for risk simulation
+- Cognitive and autonomous supply chains
+
+**Recent Findings (2024-2025)**:
+
+**Gartner 2025 Resilience Benchmark**:
+- Companies using risk-sensitive metrics with AI models: 28% faster response rate, 19% shorter recovery cycles
+- Potential 40% reduction in average disruption duration by 2030 with closed-loop intelligence
+
+**McKinsey 2024 Global Supply Chain Leader Survey**:
+- 90% of supply chain leaders faced resilience challenges in 2024
+- Only 33% have deep understanding of supply chain risks
+- 75% of CEOs view supply chain as their biggest risk AND top resilience strategy
+
+**Research Highlights**:
+- Rutgers/MIT research on cognitive supply chains with autonomous reconfiguration
+- Digital twins enabling 30% faster disruption response times
+- Hybrid digital twin-AI models improving demand forecasting by 40%
 
 ### 4. Platform Business Models
 
@@ -570,6 +645,87 @@ Core research topics and methodologies applicable across all industry verticals.
 - Space-based manufacturing
 - Bio-manufactured materials
 - Self-healing materials
+
+### 8. Digital Twins and Foundation Models ⭐ NEW 2024-2025
+
+**Topics**:
+- Cognitive digital twins with autonomous decision-making
+- Foundation models for time series (Chronos, TimeGPT, TimesFM, Moirai)
+- Zero-shot forecasting capabilities
+- Real-time scenario planning and simulation
+- Generative AI for supply chain design
+
+**Market & Adoption**:
+- Digital twin market: $125B-$150B by 2032 (30-40% annual growth)
+- 40% of companies using agentic AI, 33% experimenting
+- Top technology investment priority for supply chain leaders (IDC 2024)
+
+**Research Papers (2024-2025)**:
+
+1. **"Digital Twins in Supply Chain Operations Bridging the Physical and Digital Worlds using AI"** (ResearchGate, 2024)
+   - Integration of AI with digital twin technology
+   - Bridging physical-digital divide in supply chain operations
+
+2. **"Integrated data-driven and artificial intelligence framework to develop digital twins in distribution system"** (ScienceDirect, 2025)
+   - Real industrial case study
+   - Data-driven approaches for digital twin development
+
+3. **"The Relevance of AWS Chronos: An Evaluation of Standard Methods for Time Series Forecasting"** (arXiv, 2025)
+   - Evaluation of foundation models vs. traditional methods
+   - Performance benchmarking on diverse datasets
+
+**Case Studies**:
+- **Schneider Electric**: Multi-tier AI twin for Asia-Pacific operations reduced carbon intensity by 12% while optimizing resilience
+- **European Electronics OEM**: Digital twin simulation improved landed cost by 11.6%, restored on-time delivery to 97%
+- **Global OEM**: Logistics digital twin reduced freight and damage costs by 8%
+
+**Key Capabilities**:
+- 40% improvement in demand forecasting accuracy
+- 30% faster disruption response times
+- Autonomous scenario generation and optimization
+- Multi-objective optimization (cost vs. carbon vs. resilience)
+
+### 9. Reinforcement Learning in Supply Chain ⭐ NEW 2024-2025
+
+**Topics**:
+- Multi-agent reinforcement learning for inventory optimization
+- Graph Neural Networks + Meta-RL for route optimization
+- Risk-averse supply chain management via robust RL
+- Deep RL for perishable inventory management
+- Privacy-preserving multi-agent approaches
+
+**Recent Papers (2024-2025)**:
+
+1. **"Leveraging Multi-Agent Reinforcement Learning for Digital Transformation in Supply Chain Inventory Optimization"** (MDPI Sustainability, November 2024)
+   - Privacy-preserving Multi-agent RL (PMaRL) method
+   - Enhanced visibility, coordination, and performance
+   - Supply chain connectivity information integration
+
+2. **"Application of Reinforcement Learning Methods Combining Graph Neural Networks and Self-Attention Mechanisms in Supply Chain Route Optimization"** (MDPI Sensors, February 2025)
+   - Integration of GNNs, self-attention, and Meta-RL
+   - Advanced route optimization in complex supply networks
+
+3. **"Multi-Agent Deep Reinforcement Learning for Integrated Demand Forecasting and Inventory Optimization"** (PMC, 2024)
+   - Joint optimization framework for retail supply chains
+   - Leverages IoT sensors, RFID tracking, smart shelf monitoring
+
+4. **"Risk-averse supply chain management via robust reinforcement learning"** (Computers & Chemical Engineering, January 2025)
+   - Hedging against environment inconsistencies
+   - Addressing performance degradation in changing conditions
+
+5. **"Deep Reinforcement Learning for Dynamic Pricing and Ordering Policies in Perishable Inventory Management"** (MDPI Applied Sciences, 2025)
+   - DRL for minimizing wastage and shortages
+   - Application in blood supply chains and perishable goods
+
+6. **"Contextual reinforcement learning for supply chain management"** (Expert Systems with Applications, 2024)
+   - Context-aware RL approaches
+   - Adaptation to varying supply chain conditions
+
+**Key Findings**:
+- Classic Q-learning still most popular algorithm
+- Inventory management most common RL application
+- Multi-agent approaches enabling distributed optimization
+- Robust RL critical for real-world deployment
 
 ## Academic Resources
 
@@ -687,6 +843,77 @@ Core research topics and methodologies applicable across all industry verticals.
 - European Research Council (ERC)
 - Industry partnerships and consortia
 
+## Industry Blogs & Thought Leadership (2024-2025) ⭐ NEW
+
+### McKinsey Resources
+
+**Key Publications**:
+- **McKinsey 2024 Global Supply Chain Leader Survey**
+  - 90% of supply chain leaders faced resilience challenges in 2024
+  - Only 33% have deep understanding of supply chain risks
+  - Organizations using predictive analytics: 20% increase in operational efficiency
+  - Website: https://www.mckinsey.com/capabilities/operations
+
+**Digital Twins Research**:
+- "Digital twins: The key to unlocking end-to-end supply chain growth"
+- Focus on implementation strategies and value creation
+
+### Gartner Resources
+
+**Key Reports & Blogs**:
+- **Gartner Top 25 Supply Chains 2025**
+  - Schneider Electric tops list for third consecutive year
+  - Recognition for advanced AI use and network planning flexibility
+  - Focus on automation, AI, and environmental stewardship
+
+- **Beyond Supply Chain 2025 Predictions Blog**
+  - Corporate M&A as potential disruptor (12% YoY increase in deal volume)
+  - 80% of large enterprises implementing GenAI in early 2024
+
+- **Gartner Symposium 2025 Key Findings**:
+  - 74% of CEOs: AI will have most significant impact on business
+  - 75% of CEOs: Supply chain as biggest risk AND top resilience strategy
+  - Growth remains top priority for CEOs
+
+### Industry Publications
+
+**Supply Chain Management Review (SCMR)**:
+- "Beyond resilience: How AI and digital twins are rewriting the rules"
+- "Inside the Gartner Top 25: How supply chains are embracing the future"
+
+**SupplyChains Magazine**:
+- "The Future of Global Supply Chains: A 2025 Perspective"
+- Focus on autonomous orchestration and next-generation technologies
+
+**Rutgers Business School Insights**:
+- "Beyond Resilience: How AI and Digital Twin technology are rewriting the rules of supply chain recovery"
+- Research collaboration with MIT on cognitive supply chains
+
+**World Economic Forum**:
+- "Autonomous orchestration: next frontier in supply chain management" (Nov 2025)
+- Focus on autonomous decision-making systems
+
+### Technology Vendors & Platforms
+
+**Microsoft Azure AI Blog**:
+- "The Future of AI: Generative AI for Time Series Forecasting - Nixtla TimeGEN-1"
+- Integration of foundation models in enterprise platforms
+
+**TCS (Tata Consultancy Services)**:
+- "Digital TwindeX: The role AI plays in sustainability"
+- Supply Chain Digital coverage of enterprise implementations
+
+### Research & Development Blogs
+
+**Nixtla Blog**:
+- TimeGPT revolution in forecasting
+- "Nixtla Predicts 1 Million+ Time Series in 30 Minutes With Ray"
+- Focus on scalable forecasting solutions
+
+**Amazon Science Blog**:
+- Chronos-Bolt release and benchmarking studies
+- Foundation models for time series
+
 ---
 
-**Last Updated**: October 2025
+**Last Updated**: November 2025

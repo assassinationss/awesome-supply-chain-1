@@ -527,6 +527,104 @@ print(f'Total orders processed: {warehouse.orders_processed}')
 - Container tracking
 - Documentation digitization
 
+## Recent Projects & Repositories (2024-2025) ⭐ NEW
+
+### Foundation Models for Forecasting
+
+#### Chronos (Amazon Science)
+
+**Repository**: https://github.com/amazon-science/chronos-forecasting
+- **Stars**: 2.5k+ (as of 2025)
+- **Description**: Pre-trained time series forecasting models
+- **Models**: Chronos-T5 (Tiny, Mini, Small, Base, Large), Chronos-Bolt, Chronos-2
+- **Features**:
+  - Zero-shot forecasting
+  - Multivariate support (Chronos-2)
+  - 250x faster inference (Chronos-Bolt)
+  - Available on HuggingFace
+
+#### Nixtla Ecosystem
+
+**TimeGPT Repository**: https://github.com/Nixtla/nixtla
+- **Stars**: 1.5k+
+- **Description**: Production-ready time series foundation model
+- **Features**: API access, zero-shot forecasting, anomaly detection
+
+**NeuralForecast**: https://github.com/Nixtla/neuralforecast
+- **Stars**: 3k+
+- **Description**: Deep learning models for time series
+- **Active Development**: Regular updates through 2025
+
+**StatsForecast**: https://github.com/Nixtla/statsforecast
+- **Stars**: 4k+
+- **Description**: Fastest statistical forecasting library
+- **Performance**: 10-100x faster than traditional implementations
+
+### Reinforcement Learning for Supply Chain
+
+#### OR-Gym
+
+**Repository**: https://github.com/hubbs5/or-gym
+- **Description**: OpenAI Gym environments for OR/Supply Chain
+- **Environments**:
+  - Inventory management (classic and perishable)
+  - Vehicle routing
+  - Knapsack problems
+  - Bin packing
+- **Integration**: Works with Stable-Baselines3, Ray RLlib
+
+#### Supply Chain RL Examples
+
+**Repository**: Various university research labs
+- Multi-agent inventory optimization implementations
+- Deep RL for perishable goods management
+- Route optimization with GNN+RL
+- Risk-aware supply chain control
+
+### Digital Twin Implementations
+
+#### Supply Chain Digital Twin Frameworks
+
+**Emerging Projects**:
+- IoT-enabled supply chain twins
+- Real-time simulation platforms
+- Integration with cloud platforms (AWS, Azure, GCP)
+- Open-source digital twin frameworks
+
+### Sustainability & Circular Economy
+
+#### Circular Supply Chain Tools
+
+**Topics**:
+- Life Cycle Assessment (LCA) tools
+- Carbon footprint calculators
+- Reverse logistics optimization
+- Material flow analysis
+- Blockchain for transparency
+
+### Open Source Supply Chain Platforms (2024-2025 Updates)
+
+#### GitHub Secure Open Source Fund (Nov 2024)
+
+**Initiative**: https://github.blog/open-source/maintainers/
+- 125 maintainers from 71 important open source projects
+- 1,100+ vulnerabilities remediated
+- 50+ new CVEs issued
+- Integration of Sigstore into PyPI
+- SLSA (Supply chain Levels for Software Artifacts) support
+
+#### Notable Security Projects
+
+**GUAC (Graph for Understanding Artifact Composition)**:
+- **Repository**: https://github.com/guacsec/guac
+- **Stars**: 1.4k
+- **Description**: Aggregates software security metadata into graph database
+
+**OpenSSF Projects**:
+- Best Practices Badge
+- Sigstore for software signing
+- SLSA framework
+
 ## Academic Research Code
 
 ### Papers with Code
@@ -535,6 +633,11 @@ print(f'Total orders processed: {warehouse.orders_processed}')
 - Search for "supply chain"
 - Filter by task (forecasting, optimization, etc.)
 - Find papers with available implementations
+- **2024-2025 Focus Areas**:
+  - Foundation models for time series
+  - Multi-agent reinforcement learning
+  - Digital twins and simulation
+  - Circular economy optimization
 
 ### GitHub Research Repositories
 
@@ -543,6 +646,11 @@ print(f'Total orders processed: {warehouse.orders_processed}')
 - Conference paper implementations
 - Journal article code
 - Thesis projects
+- **Trending Topics (2024-2025)**:
+  - Reinforcement learning applications
+  - Graph neural networks for supply chains
+  - Foundation models fine-tuning
+  - Sustainability optimization
 
 ## Learning Projects
 
@@ -650,4 +758,4 @@ print(f'Total orders processed: {warehouse.orders_processed}')
 
 ---
 
-**Last Updated**: October 2025
+**Last Updated**: November 2025

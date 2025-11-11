@@ -84,25 +84,61 @@ Curated list of open-source implementations:
 - Warehouse management systems
 - Supply chain simulation frameworks
 
+## What's New (2024-2025) 🚀
+
+### Foundation Models for Forecasting
+- **Amazon Chronos**: Open-source time series foundation models with zero-shot forecasting capabilities
+- **Nixtla TimeGPT**: First commercial foundation model trained on 100B+ time series data points
+- **Google TimesFM & Salesforce Moirai**: Major tech companies entering the time series space
+- Performance improvements: 40% better demand forecasting accuracy with hybrid AI models
+
+### AI & Digital Twins
+- **Cognitive Supply Chains**: Autonomous systems that reconfigure logistics in real-time
+- **Market Growth**: Digital twin market projected to reach $125B-$150B by 2032 (30-40% annual growth)
+- **Real Impact**: 28% faster response rates, 19% shorter recovery cycles, 30% faster disruption response
+- **Agentic AI**: 40% of companies already using AI agents for optimization tasks
+
+### Circular Economy & Sustainability
+- **Research Boom**: 111+ peer-reviewed papers in 2024-2025 on circular supply chains
+- **Critical Materials**: Focus on lithium, cobalt, rare earth elements for clean energy supply chains
+- **Digital Integration**: Blockchain and IoT for circular supply chain transparency and carbon tracking
+- **Performance**: 12% reduction in carbon intensity per unit shipped with AI-optimized networks
+
+### Reinforcement Learning Applications
+- **Multi-Agent RL**: Privacy-preserving approaches for distributed inventory optimization
+- **Route Optimization**: Graph Neural Networks + Meta-RL for dynamic routing
+- **Risk-Aware Systems**: Robust RL to hedge against supply chain disruptions
+- **Perishable Goods**: Deep RL for managing waste and shortages in blood supply chains
+
+### Industry Insights (McKinsey & Gartner 2024-2025)
+- 74% of CEOs believe AI will have the most significant impact on their businesses
+- 75% of CEOs view supply chain as their biggest risk AND top resilience strategy
+- 90% of supply chain leaders faced resilience challenges in 2024
+- Only 33% of leaders have deep understanding of supply chain risks
+- 20% increase in operational efficiency with predictive analytics
+
 ## Key Research Themes (2024-2025)
 
 ### Emerging Technologies
-- **Generative AI**: ChatGPT and LLMs for supply chain planning
-- **Digital Twins**: Virtual replicas for simulation and optimization
-- **Autonomous Systems**: Self-driving vehicles, drones, robots
+- **Generative AI**: ChatGPT and LLMs for supply chain planning and autonomous decision-making
+- **Digital Twins**: Virtual replicas for simulation, optimization, and scenario planning
+- **Autonomous Systems**: Self-driving vehicles, drones, robots, and agentic AI
+- **Foundation Models**: Pre-trained models for zero-shot forecasting and anomaly detection
 - **5G & Edge Computing**: Real-time decision making at the edge
 
 ### Sustainability Focus
-- Carbon footprint reduction and tracking
+- Carbon footprint reduction and tracking (Scope 1, 2, 3 emissions)
 - Circular economy and closed-loop supply chains
 - Sustainable sourcing and ethical procurement
 - Green logistics and eco-friendly transportation
+- Critical materials supply chains for clean energy transition
 
 ### Resilience & Risk
-- Supply chain resilience frameworks
+- Supply chain resilience frameworks and anti-fragile systems
 - Multi-sourcing and supplier diversification
-- Scenario planning and risk mitigation
+- Scenario planning and risk mitigation with digital twins
 - Real-time visibility and control towers
+- Robust reinforcement learning for disruption management
 
 ## Contributing
 
@@ -131,4 +167,4 @@ This repository is actively maintained and updated with the latest research and 
 
 ---
 
-**Last Updated**: October 2025
+**Last Updated**: November 2025
