@@ -2,9 +2,12 @@
 
 A comprehensive collection of research papers, implementations, libraries, and resources for supply chain management, organized by industry verticals.
 
+**🎉 NEW: 132 AI Agent Skills Available!** This repository now includes a complete Claude Code plugin with supply chain skills for AI coding assistants. [See Skills Documentation →](./skills/)
+
 ## Table of Contents
 
 - [Overview](#overview)
+- [AI Skills Plugin](#ai-skills-plugin)
 - [Industry Verticals](#industry-verticals)
 - [General Research](#general-research)
 - [Libraries & Tools](#libraries--tools)
@@ -14,6 +17,33 @@ A comprehensive collection of research papers, implementations, libraries, and r
 ## Overview
 
 This repository consolidates the latest research, papers, implementations, and development libraries related to supply chain use cases across different industry verticals. It serves as a curated resource for researchers, practitioners, and developers working on supply chain optimization, management, and analytics.
+
+## AI Skills Plugin
+
+This repository includes **132 comprehensive AI agent skills** that work as a plugin for Claude Code and other AI coding assistants. These skills give your AI assistant expert knowledge in:
+
+- **Supply Chain Planning** - Demand forecasting, S&OP, capacity planning
+- **Operations Research** - VRP, TSP, facility location, knapsack, cutting stock
+- **Inventory Management** - EOQ, safety stock, multi-echelon optimization
+- **Warehouse Operations** - Slotting, routing, wave planning, automation
+- **Transportation** - Route optimization, fleet management, last-mile delivery
+- **Manufacturing** - Production scheduling, lean, quality management
+- **Domain Expertise** - Retail, CPG, energy, healthcare, travel, manufacturing
+
+### Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/kishorkukreja/awesome-supply-chain.git
+
+# Install skills to Claude Code
+cd awesome-supply-chain
+cp -r skills/* ~/.claude/skills/
+```
+
+**Full Skills Documentation:** [skills/README.md](./skills/README.md)
+
+**Plugin Configuration:** [.claude/README.md](./.claude/README.md)
 
 ## Industry Verticals
 
@@ -111,7 +141,18 @@ We welcome contributions! Please follow these guidelines:
 1. **Adding Papers**: Include title, authors, publication venue, year, and DOI/link
 2. **Adding Implementations**: Provide repository link, description, and key features
 3. **Adding Libraries**: Include installation instructions, use cases, and examples
-4. **Quality Standards**: Ensure resources are from reputable sources and are recent (preferably 2020+)
+4. **Adding/Improving Skills**: Contribute to the AI skills in the `skills/` directory
+5. **Quality Standards**: Ensure resources are from reputable sources and are recent (preferably 2020+)
+
+### Contributing Skills
+
+The `skills/` directory contains 132 AI agent skills for supply chain problems. To contribute:
+
+1. Follow the existing skill structure (YAML frontmatter + markdown content)
+2. Include working Python code examples
+3. Add relevant algorithms and frameworks
+4. Reference industry best practices
+5. See [skills/README.md](./skills/README.md) for detailed guidelines
 
 ## Research Sources
 
