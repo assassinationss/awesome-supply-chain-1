@@ -44,24 +44,54 @@ You can also invoke skills directly:
 
 ## Installation
 
-### For Claude Code CLI
-
-1. Clone or download this repository
-2. Copy the skills directory to your Claude skills location:
+### Option 1: CLI Install (Recommended)
+Use add-skill to install skills directly:
 
 ```bash
-# Navigate to this repository
-cd awesome-supply-chain
+# Install all skills
+npx add-skill kishorkukreja/awesome-supply-chain
 
-# Copy all skills to Claude's skills directory
-cp -r skills/* ~/.claude/skills/
+# Install specific skills
+npx add-skill kishorkukreja/awesome-supply-chain --skill demand-forecasting vehicle-routing-problem
 
-# Or copy just the skills you need
-cp -r skills/demand-forecasting ~/.claude/skills/
-cp -r skills/vehicle-routing-problem ~/.claude/skills/
+# List available skills
+npx add-skill kishorkukreja/awesome-supply-chain --list
 ```
 
-3. Start using Claude Code - skills will activate automatically when relevant
+This automatically installs to your `.claude/skills/` directory.
+
+### Option 2: Claude Code Plugin
+Install via Claude Code's built-in plugin system:
+
+```bash
+# Add the marketplace
+/plugin marketplace add kishorkukreja/awesome-supply-chain
+
+# Install all supply chain skills
+/plugin install supply-chain-skills
+```
+
+### Option 3: Clone and Copy
+Clone the entire repo and copy the skills folder:
+
+```bash
+git clone https://github.com/kishorkukreja/awesome-supply-chain.git
+cp -r awesome-supply-chain/skills/* .claude/skills/
+```
+
+### Option 4: Git Submodule
+Add as a submodule for easy updates:
+
+```bash
+git submodule add https://github.com/kishorkukreja/awesome-supply-chain.git .claude/awesome-supply-chain
+```
+
+Then reference skills from `.claude/awesome-supply-chain/skills/`.
+
+### Option 5: Fork and Customize
+1. Fork this repository
+2. Customize skills for your specific needs
+3. Clone your fork into your projects
 
 ### For Other AI Coding Assistants
 
@@ -78,8 +108,8 @@ Simply copy the `skills/` directory contents to your AI assistant's custom instr
 
 ```
 awesome-supply-chain/
-├── .claude/
-│   ├── plugin.json          # Plugin metadata
+├── .claude-plugin/
+│   ├── marketplace.json     # Plugin marketplace metadata
 │   └── README.md            # This file
 ├── skills/                  # 132 skill directories
 │   ├── demand-forecasting/
@@ -89,6 +119,25 @@ awesome-supply-chain/
 │   └── [130 more skills...]
 └── README.md                # Main repository README
 ```
+
+## Usage
+
+Once installed, just ask Claude Code to help with supply chain tasks:
+
+**"Help me optimize inventory levels for 500 SKUs"**
+→ Uses inventory-optimization skill
+
+**"Build a demand forecast model with seasonality"**
+→ Uses demand-forecasting skill
+
+**"Optimize delivery routes for 50 customers"**
+→ Uses vehicle-routing-problem skill
+
+**"Design a warehouse slotting strategy"**
+→ Uses warehouse-slotting-optimization skill
+
+**"Calculate optimal safety stock levels"**
+→ Uses economic-order-quantity skill
 
 ## Example Usage
 
