@@ -2,7 +2,7 @@
 
 A comprehensive collection of research papers, implementations, libraries, and resources for supply chain management, organized by industry verticals.
 
-**🎉 NEW: 132 AI Agent Skills Available!** This repository now includes a complete Claude Code plugin with supply chain skills for AI coding assistants. [See Skills Documentation →](./skills/)
+132 AI Agent Skills Available!** This repository now includes a complete Claude Code plugin with supply chain skills for AI coding assistants. [See Skills Documentation →](./skills/)
 
 ## Table of Contents
 
