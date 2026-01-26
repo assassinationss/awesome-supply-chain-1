@@ -2,9 +2,47 @@
 
 A comprehensive collection of 132 AI agent skills focused on supply chain management tasks. Built for supply chain professionals, operations researchers, and logistics managers who want AI coding assistants (Claude Code, Cursor, GitHub Copilot, etc.) to help with optimization, forecasting, network design, inventory management, and operations research.
 
+**🎉 NEW: Now available as a Claude Code plugin!** Install once and get instant access to all 132 supply chain skills in your coding CLI.
+
 ## What are Skills?
 
 Skills are markdown files that give AI agents specialized knowledge and workflows for specific tasks. When you add these to your project, your AI coding assistant can recognize when you're working on a supply chain problem and apply the right frameworks, algorithms, and best practices.
+
+## 🚀 Quick Start - Plugin Installation
+
+This repository is now configured as a **Claude Code plugin** for seamless integration with AI coding assistants.
+
+### For Claude Code CLI
+
+```bash
+# Clone the repository
+git clone https://github.com/kishorkukreja/awesome-supply-chain.git
+cd awesome-supply-chain
+
+# Install all skills to Claude Code
+cp -r skills/* ~/.claude/skills/
+
+# Or install specific skills only
+cp -r skills/demand-forecasting ~/.claude/skills/
+cp -r skills/vehicle-routing-problem ~/.claude/skills/
+cp -r skills/inventory-optimization ~/.claude/skills/
+```
+
+### For Other AI Assistants
+
+**Cursor, Aider, Continue, or other IDEs:**
+Copy the `skills/` directory contents to your AI assistant's custom skills or instructions folder. Each skill is a standalone markdown file that works with any AI coding assistant that supports custom instructions.
+
+### Using as a Git Submodule
+
+```bash
+# Add as submodule to your project
+cd your-project
+git submodule add https://github.com/kishorkukreja/awesome-supply-chain.git
+
+# Symlink skills to Claude Code
+ln -s $(pwd)/awesome-supply-chain/skills/* ~/.claude/skills/
+```
 
 ## Overview
 
@@ -318,35 +356,55 @@ Each skill includes:
 
 ---
 
-## 🔧 Installation
+## 🔧 Installation Options
 
-### Option 1: Clone the Repository
+### Option 1: Claude Code Plugin (Recommended)
+
+Install as a complete plugin for Claude Code:
 
 ```bash
-git clone https://github.com/yourusername/awesome-supply-chain.git
+# Clone the repository
+git clone https://github.com/kishorkukreja/awesome-supply-chain.git
+cd awesome-supply-chain
+
+# Install all 132 skills
+cp -r skills/* ~/.claude/skills/
+```
+
+### Option 2: Select Specific Skills
+
+Install only the skills you need:
+
+```bash
 cd awesome-supply-chain/skills
+
+# Example: Install forecasting and routing skills
+cp -r demand-forecasting ~/.claude/skills/
+cp -r vehicle-routing-problem ~/.claude/skills/
+cp -r inventory-optimization ~/.claude/skills/
+cp -r warehouse-slotting-optimization ~/.claude/skills/
 ```
 
-Then copy skills to your `.claude/skills/` directory (or equivalent for your AI assistant):
+### Option 3: Symlink for Auto-Updates
+
+Create a symbolic link to get automatic updates:
 
 ```bash
-cp -r * ~/.claude/skills/
-```
-
-### Option 2: Copy Individual Skills
-
-Copy only the skills you need:
-
-```bash
-cp -r demand-forecasting inventory-optimization route-optimization ~/.claude/skills/
-```
-
-### Option 3: Symlink (for Development)
-
-Create a symbolic link to keep skills updated:
-
-```bash
+# Link entire skills directory
 ln -s /path/to/awesome-supply-chain/skills ~/.claude/skills/supply-chain
+
+# Or link individual skills
+ln -s /path/to/awesome-supply-chain/skills/demand-forecasting ~/.claude/skills/demand-forecasting
+```
+
+### Option 4: Git Submodule
+
+Add to your project as a submodule:
+
+```bash
+cd your-supply-chain-project
+git submodule add https://github.com/kishorkukreja/awesome-supply-chain.git
+ln -s awesome-supply-chain/skills/* ~/.claude/skills/
 ```
 
 ---
@@ -355,17 +413,21 @@ ln -s /path/to/awesome-supply-chain/skills ~/.claude/skills/supply-chain
 
 Once installed, your AI coding assistant will automatically detect when you're working on supply chain problems and apply the relevant skill frameworks.
 
+### Automatic Skill Activation
+
+Skills trigger based on keywords in your conversation:
+
 **Example prompts:**
 
-```
+```bash
 "Help me optimize my warehouse slotting using ABC analysis"
-→ Uses warehouse-slotting-optimization skill
+→ Automatically uses warehouse-slotting-optimization skill
 
 "Build a demand forecasting model with seasonality"
-→ Uses demand-forecasting skill
+→ Automatically uses demand-forecasting skill
 
 "Solve this vehicle routing problem with time windows"
-→ Uses vrp-time-windows skill
+→ Automatically uses vrp-time-windows skill
 
 "Design a distribution network with 3 potential DC locations"
 → Uses network-design and facility-location-problem skills
@@ -374,13 +436,27 @@ Once installed, your AI coding assistant will automatically detect when you're w
 → Uses production-scheduling and metaheuristic-optimization skills
 ```
 
-You can also invoke skills directly by mentioning them:
+### Direct Skill Invocation
 
-```
-"Use the knapsack-problems skill to help me maximize cargo value"
+You can also explicitly invoke skills:
+
+```bash
+"Use the knapsack-problems skill to maximize cargo value"
 "Apply lean-manufacturing principles to reduce waste"
-"Run the newsvendor-problem analysis for our seasonal products"
+"Run the newsvendor-problem analysis for seasonal products"
+"Use economic-order-quantity skill to calculate optimal order quantities"
 ```
+
+### Compatible AI Coding Assistants
+
+This plugin works with:
+- ✅ **Claude Code** (Anthropic's official CLI)
+- ✅ **Cursor** (AI-powered IDE)
+- ✅ **Aider** (AI pair programming in terminal)
+- ✅ **Continue** (VS Code / JetBrains extension)
+- ✅ **GitHub Copilot** (with workspace instructions)
+- ✅ **Cody** (Sourcegraph's AI assistant)
+- ✅ **Any coding assistant supporting custom skills/instructions**
 
 ---
 
