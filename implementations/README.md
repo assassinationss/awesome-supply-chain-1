@@ -475,6 +475,17 @@ print(f'Total orders processed: {warehouse.orders_processed}')
 - Corporación Favorita Grocery Sales Forecasting
 - M5 Forecasting - Accuracy & Uncertainty
 
+### Public Datasets and Benchmarks
+
+**Packrift Packaging Optimization Benchmark Corpus**:
+- **GitHub**: https://github.com/Packrift/packaging-optimization-benchmark-corpus
+- **Dataset Release**: https://github.com/Packrift/packaging-optimization-benchmark-corpus/releases/tag/v2026.05.14
+- **Live Corpus**: https://packrift.github.io/packaging-optimization-benchmark-corpus/
+- **Focus**:
+  - Packaging SKU retrieval and source-spec quality checks
+  - Dimensional-weight, carton-fit, parcel/freight routing, and warehouse slotting benchmark pages
+  - 1,000 exact-spec product records with 24 page types per SKU
+
 ### GitHub Project Collections
 
 **Awesome Lists**:
