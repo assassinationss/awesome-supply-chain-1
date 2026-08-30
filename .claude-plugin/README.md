@@ -1,6 +1,6 @@
 # Awesome Supply Chain - Claude Code Plugin
 
-This plugin provides 132 comprehensive AI agent skills for supply chain management, operations research, and logistics optimization.
+This plugin provides 133 comprehensive AI agent skills for supply-chain decision framing, management, operations research, and logistics optimisation.
 
 ## What is this plugin?
 
@@ -15,11 +15,11 @@ This is a Claude Code plugin that gives your AI coding assistant deep expertise 
 
 ## Skills Included
 
-The plugin contains **132 skills** organized into:
+The plugin contains **133 skills** organized into:
 - **Core Supply Chain Functions** (45 skills)
 - **Domain-Specific Verticals** (34 skills)
 - **Operations Research Problems** (43 skills)
-- **Advanced Optimization & AI** (10 skills)
+- **Advanced Optimization, AI & Decision Framing** (11 skills)
 
 Each skill provides:
 - Expert frameworks and methodologies
@@ -44,21 +44,26 @@ You can also invoke skills directly:
 
 ## Installation
 
-### Option 1: CLI Install (Recommended)
-Use add-skill to install skills directly:
+### Option 1: Cross-agent CLI install
+
+Use the Agent Skills CLI to install skills to Claude Code, Codex, Cursor, GitHub Copilot, or another supported agent:
 
 ```bash
-# Install all skills
-npx add-skill kishorkukreja/awesome-supply-chain
-
-# Install specific skills
-npx add-skill kishorkukreja/awesome-supply-chain --skill demand-forecasting vehicle-routing-problem
-
 # List available skills
-npx add-skill kishorkukreja/awesome-supply-chain --list
+npx skills add kishorkukreja/awesome-supply-chain --list
+
+# Install the decision-framing skill
+npx skills add kishorkukreja/awesome-supply-chain --skill supply-chain-decision-to-delegation
+
+# Install it globally for Claude Code and Codex
+npx skills add kishorkukreja/awesome-supply-chain \
+  --skill supply-chain-decision-to-delegation \
+  --global \
+  --agent claude-code \
+  --agent codex
 ```
 
-This automatically installs to your `.claude/skills/` directory.
+See [the complete agent installation guide](../docs/agent-installation.md) for standalone and manual options.
 
 ### Option 2: Claude Code Plugin
 Install via Claude Code's built-in plugin system:
@@ -68,7 +73,7 @@ Install via Claude Code's built-in plugin system:
 /plugin marketplace add kishorkukreja/awesome-supply-chain
 
 # Install all supply chain skills
-/plugin install supply-chain-skills
+/plugin install supply-chain-skills@awesome-supply-chain
 ```
 
 ### Option 3: Clone and Copy
@@ -93,16 +98,9 @@ Then reference skills from `.claude/awesome-supply-chain/skills/`.
 2. Customize skills for your specific needs
 3. Clone your fork into your projects
 
-### For Other AI Coding Assistants
+### For other AI coding assistants
 
-The skills are standard markdown files with YAML frontmatter and work with:
-- **Claude Code** (Anthropic's CLI)
-- **Cursor** (IDE with AI)
-- **GitHub Copilot** (with custom instructions)
-- **Aider** (AI pair programming)
-- **Continue** (VS Code/JetBrains)
-
-Simply copy the `skills/` directory contents to your AI assistant's custom instructions or skills folder.
+The skills follow the open Agent Skills specification. Use `npx skills add` and select the target agent, or copy an individual skill directory into the agent's documented skill location.
 
 ## Directory Structure
 
@@ -111,12 +109,12 @@ awesome-supply-chain/
 ├── .claude-plugin/
 │   ├── marketplace.json     # Plugin marketplace metadata
 │   └── README.md            # This file
-├── skills/                  # 132 skill directories
+├── skills/                  # 133 skill directories
 │   ├── demand-forecasting/
 │   │   └── SKILL.md
 │   ├── vehicle-routing-problem/
 │   │   └── SKILL.md
-│   └── [130 more skills...]
+│   └── [131 more skills...]
 └── README.md                # Main repository README
 ```
 
@@ -199,9 +197,9 @@ Skills leverage powerful Python libraries:
 
 ## Version
 
-- **Version:** 1.0.0
-- **Total Skills:** 132
-- **Last Updated:** January 2026
+- **Version:** 1.1.0
+- **Total Skills:** 133
+- **Last Updated:** August 2026
 
 ## License
 
@@ -216,7 +214,7 @@ MIT License - Free for commercial and personal use
 ## Related Resources
 
 See the main [README.md](../README.md) for:
-- Complete list of all 132 skills
+- Complete list of all 133 skills
 - Detailed skill descriptions and triggers
 - Learning paths by experience level
 - Contributing guidelines

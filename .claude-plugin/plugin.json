@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "supply-chain-skills",
+  "version": "1.1.0",
+  "description": "Supply-chain planning, decision framing, operations research, logistics, manufacturing, procurement, and optimisation skills.",
+  "author": {
+    "name": "Kishor Kukreja",
+    "url": "https://github.com/kishorkukreja"
+  },
+  "homepage": "https://github.com/kishorkukreja/awesome-supply-chain",
+  "repository": "https://github.com/kishorkukreja/awesome-supply-chain",
+  "license": "MIT",
+  "keywords": [
+    "supply-chain",
+    "planning",
+    "logistics",
+    "operations-research",
+    "agent-skills"
+  ],
+  "skills": "./skills/"
+}

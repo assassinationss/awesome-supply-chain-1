@@ -1,0 +1,6 @@
+interface:
+  display_name: "Supply Chain Decision to Delegation"
+  short_description: "Frame scoped, accountable supply-chain AI use cases"
+  default_prompt: "Use $supply-chain-decision-to-delegation to turn a supply-chain pain point into a scoped decision, readiness verdict, and delegation brief."
+policy:
+  allow_implicit_invocation: true

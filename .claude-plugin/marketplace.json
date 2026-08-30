@@ -5,14 +5,13 @@
     "url": "https://github.com/kishorkukreja"
   },
   "metadata": {
-    "description": "132 comprehensive AI agent skills for supply chain management, operations research, and logistics optimization",
-    "version": "1.0.0",
-    "repository": "https://github.com/kishorkukreja/awesome-supply-chain"
+    "description": "133 comprehensive AI agent skills for supply chain management, decision framing, operations research, and logistics optimization",
+    "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "supply-chain-skills",
-      "description": "132 comprehensive supply chain skills covering planning, forecasting, optimization, logistics, manufacturing, procurement, and domain-specific solutions for retail, CPG, energy, healthcare, and more",
+      "description": "133 comprehensive supply chain skills covering decision framing, planning, forecasting, optimization, logistics, manufacturing, procurement, and domain-specific solutions",
       "source": "./",
       "strict": false,
       "skills": [
@@ -130,6 +129,7 @@
         "./skills/supplier-selection",
         "./skills/supply-chain-analytics",
         "./skills/supply-chain-automation",
+        "./skills/supply-chain-decision-to-delegation",
         "./skills/sustainable-sourcing",
         "./skills/task-assignment-problem",
         "./skills/tour-operations",

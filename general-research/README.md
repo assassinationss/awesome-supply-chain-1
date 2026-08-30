@@ -10,6 +10,10 @@ Core research topics and methodologies applicable across all industry verticals.
 - [Emerging Research Areas](#emerging-research-areas)
 - [Academic Resources](#academic-resources)
 
+## Featured Article
+
+- [The 6:12 a.m. supply-chain problem](./ai-agents/the-6-12-am-supply-chain-problem.md) — a practical guide for leaders and planners to frame the decision, assess stakes and reversibility, and decide what AI may draft, what humans must approve, and what humans must own.
+
 ## Research Domains
 
 ### 1. Demand Forecasting

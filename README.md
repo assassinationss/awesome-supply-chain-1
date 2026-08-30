@@ -2,7 +2,7 @@
 
 A comprehensive collection of research papers, implementations, libraries, and resources for supply chain management, organized by industry verticals.
 
-132 AI Agent Skills Available!** This repository now includes a complete Claude Code plugin with supply chain skills for AI coding assistants. [See Skills Documentation →](./skills/)
+**133 AI agent skills available.** The repository follows the open Agent Skills format and includes plugin metadata for Claude Code and Codex. [See the skills documentation →](./skills/)
 
 ## Table of Contents
 
@@ -20,7 +20,7 @@ This repository consolidates the latest research, papers, implementations, and d
 
 ## AI Skills Plugin
 
-This repository includes **132 comprehensive AI agent skills** that work as a plugin for Claude Code and other AI coding assistants. These skills give your AI assistant expert knowledge in:
+This repository includes **133 comprehensive AI agent skills** that work with Claude Code, Codex, Cursor, GitHub Copilot, and other Agent Skills-compatible assistants. These skills give your AI assistant expert knowledge in:
 
 - **Supply Chain Planning** - Demand forecasting, S&OP, capacity planning
 - **Operations Research** - VRP, TSP, facility location, knapsack, cutting stock
@@ -33,17 +33,34 @@ This repository includes **132 comprehensive AI agent skills** that work as a pl
 ### Quick Start
 
 ```bash
-# Clone the repository
-git clone https://github.com/kishorkukreja/awesome-supply-chain.git
+# List all available skills
+npx skills add kishorkukreja/awesome-supply-chain --list
 
-# Install skills to Claude Code
-cd awesome-supply-chain
-cp -r skills/* ~/.claude/skills/
+# Install the decision-framing skill to Codex and Claude Code
+npx skills add kishorkukreja/awesome-supply-chain \
+  --skill supply-chain-decision-to-delegation \
+  --agent codex \
+  --agent claude-code
+```
+
+Claude Code users can also install the complete plugin:
+
+```text
+/plugin marketplace add kishorkukreja/awesome-supply-chain
+/plugin install supply-chain-skills@awesome-supply-chain
 ```
 
 **Full Skills Documentation:** [skills/README.md](./skills/README.md)
 
-**Plugin Configuration:** [.claude/README.md](./.claude/README.md)
+**Agent installation:** [docs/agent-installation.md](./docs/agent-installation.md)
+
+**Claude plugin configuration:** [.claude-plugin/README.md](./.claude-plugin/README.md)
+
+### New: frame the decision before choosing the agent
+
+Use [`supply-chain-decision-to-delegation`](./skills/supply-chain-decision-to-delegation/) to turn a messy operational pain point into a scoped decision, test AI readiness, choose a human/AI delegation model, and produce a consulting-ready brief. The skill is allowed to conclude that ownership, process, or data must be fixed before AI.
+
+Read the companion article: [The 6:12 a.m. supply-chain problem](./general-research/ai-agents/the-6-12-am-supply-chain-problem.md).
 
 ## Industry Verticals
 
@@ -146,7 +163,7 @@ We welcome contributions! Please follow these guidelines:
 
 ### Contributing Skills
 
-The `skills/` directory contains 132 AI agent skills for supply chain problems. To contribute:
+The `skills/` directory contains 133 AI agent skills for supply chain problems. To contribute:
 
 1. Follow the existing skill structure (YAML frontmatter + markdown content)
 2. Include working Python code examples
@@ -172,4 +189,4 @@ This repository is actively maintained and updated with the latest research and 
 
 ---
 
-**Last Updated**: October 2025
+**Last Updated**: August 2026

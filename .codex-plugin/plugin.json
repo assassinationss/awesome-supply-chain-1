@@ -1,0 +1,37 @@
+{
+  "name": "supply-chain-skills",
+  "version": "1.1.0",
+  "description": "Supply-chain planning, decision framing, operations research, logistics, manufacturing, procurement, and optimisation skills.",
+  "author": {
+    "name": "Kishor Kukreja",
+    "url": "https://github.com/kishorkukreja"
+  },
+  "homepage": "https://github.com/kishorkukreja/awesome-supply-chain",
+  "repository": "https://github.com/kishorkukreja/awesome-supply-chain",
+  "license": "MIT",
+  "keywords": [
+    "supply-chain",
+    "planning",
+    "logistics",
+    "operations-research",
+    "agent-skills"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Awesome Supply Chain",
+    "shortDescription": "Supply-chain skills for decisions and operations",
+    "longDescription": "A broad supply-chain skill collection covering decision framing, planning, optimisation, inventory, logistics, manufacturing, procurement, risk, and industry-specific operations.",
+    "developerName": "Kishor Kukreja",
+    "category": "Productivity",
+    "capabilities": [
+      "Write"
+    ],
+    "websiteURL": "https://github.com/kishorkukreja/awesome-supply-chain",
+    "defaultPrompt": [
+      "Frame a supply-chain problem before selecting an AI use case.",
+      "Compare candidate supply-chain decisions and delegation boundaries.",
+      "Apply the relevant supply-chain specialist skill to this problem."
+    ],
+    "brandColor": "#0F766E"
+  }
+}

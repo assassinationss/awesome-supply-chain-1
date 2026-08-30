@@ -1,8 +1,8 @@
 # Supply Chain Skills for AI Coding Assistants
 
-A comprehensive collection of 132 AI agent skills focused on supply chain management tasks. Built for supply chain professionals, operations researchers, and logistics managers who want AI coding assistants (Claude Code, Cursor, GitHub Copilot, etc.) to help with optimization, forecasting, network design, inventory management, and operations research.
+A comprehensive collection of 133 AI agent skills focused on supply-chain management tasks. Built for supply-chain professionals, operations researchers, and logistics managers who want AI coding assistants to help with decision framing, optimisation, forecasting, network design, inventory management, and operations research.
 
-**🎉 NEW: Now available as a Claude Code plugin!** Install once and get instant access to all 132 supply chain skills in your coding CLI.
+**Now available as portable Agent Skills and a Claude Code plugin.** Install one skill or the complete collection in Claude Code, Codex, Cursor, GitHub Copilot, and other compatible agents.
 
 ## What are Skills?
 
@@ -12,20 +12,21 @@ Skills are markdown files that give AI agents specialized knowledge and workflow
 
 This repository is now configured as a **Claude Code plugin** for seamless integration with AI coding assistants.
 
-### For Claude Code CLI
+### Cross-agent installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/kishorkukreja/awesome-supply-chain.git
-cd awesome-supply-chain
+# List available skills
+npx skills add kishorkukreja/awesome-supply-chain --list
 
-# Install all skills to Claude Code
-cp -r skills/* ~/.claude/skills/
+# Install the decision-to-delegation skill
+npx skills add kishorkukreja/awesome-supply-chain \
+  --skill supply-chain-decision-to-delegation
 
-# Or install specific skills only
-cp -r skills/demand-forecasting ~/.claude/skills/
-cp -r skills/vehicle-routing-problem ~/.claude/skills/
-cp -r skills/inventory-optimization ~/.claude/skills/
+# Target Codex and Claude Code explicitly
+npx skills add kishorkukreja/awesome-supply-chain \
+  --skill supply-chain-decision-to-delegation \
+  --agent codex \
+  --agent claude-code
 ```
 
 ### For Other AI Assistants
@@ -46,7 +47,7 @@ ln -s $(pwd)/awesome-supply-chain/skills/* ~/.claude/skills/
 
 ## Overview
 
-This repository contains **132 comprehensive skills** covering:
+This repository contains **133 comprehensive skills** covering:
 - **Core Supply Chain Functions** (45 skills)
 - **Domain-Specific Verticals** (34 skills)
 - **Operations Research Problems** (43 skills)
@@ -129,7 +130,7 @@ Each skill includes:
 
 ---
 
-### **6. Analytics & Technology** (6 skills)
+### **6. Analytics, Technology & Decision Framing** (7 skills)
 
 | Skill | Description | Triggers |
 |-------|-------------|----------|
@@ -138,6 +139,7 @@ Each skill includes:
 | [ml-supply-chain](ml-supply-chain/) | Machine learning, predictive analytics, XGBoost | "machine learning," "predictive analytics," "ML" |
 | [optimization-modeling](optimization-modeling/) | Linear programming, MIP, PuLP, Gurobi | "optimization," "linear programming," "MIP" |
 | [supply-chain-automation](supply-chain-automation/) | RPA, workflow automation, API integration | "automation," "RPA," "workflow" |
+| [supply-chain-decision-to-delegation](supply-chain-decision-to-delegation/) | Scope decisions, test AI readiness, and define human/AI authority | "AI use case," "agent delegation," "problem framing," "human approval" |
 | [prescriptive-analytics](prescriptive-analytics/) | Decision optimization, recommendations | "prescriptive analytics," "decision support" |
 
 ---
@@ -358,18 +360,16 @@ Each skill includes:
 
 ## 🔧 Installation Options
 
-### Option 1: Claude Code Plugin (Recommended)
+### Option 1: Agent Skills CLI (Recommended)
 
-Install as a complete plugin for Claude Code:
+Install one skill or select a target agent interactively:
 
 ```bash
-# Clone the repository
-git clone https://github.com/kishorkukreja/awesome-supply-chain.git
-cd awesome-supply-chain
-
-# Install all 132 skills
-cp -r skills/* ~/.claude/skills/
+npx skills add kishorkukreja/awesome-supply-chain --list
+npx skills add kishorkukreja/awesome-supply-chain --skill supply-chain-decision-to-delegation
 ```
+
+See [the full installation guide](../docs/agent-installation.md) for Claude Code plugin, Codex, manual, and other agent options.
 
 ### Option 2: Select Specific Skills
 
@@ -579,7 +579,7 @@ Contributions welcome! Ways to contribute:
 
 ## 📊 Skill Statistics
 
-- **Total Skills:** 132
+- **Total Skills:** 133
 - **Total Lines of Code:** 150,000+
 - **Python Examples:** 500+
 - **Optimization Models:** 100+
@@ -662,6 +662,6 @@ Built for the supply chain community by leveraging:
 
 ---
 
-**Last Updated:** January 2026
+**Last Updated:** August 2026
 
-**Repository:** [awesome-supply-chain](https://github.com/yourusername/awesome-supply-chain)
+**Repository:** [awesome-supply-chain](https://github.com/kishorkukreja/awesome-supply-chain)
