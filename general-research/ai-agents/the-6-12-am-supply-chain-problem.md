@@ -10,6 +10,20 @@ Most agent conversations skip this diagnosis. They begin with a capability: moni
 
 The result is not a lack of automation. It is a weak problem statement. A late purchase order, shortage, or shipment delay gets treated as a message to clear rather than a decision to make.
 
+## A skill for the work before the workflow
+
+To make this diagnosis practical, we built the [`supply-chain-decision-to-delegation` skill](../../skills/supply-chain-decision-to-delegation/). It is designed for the work that happens before a team selects an AI agent, designs a workflow, or funds a pilot.
+
+The skill does not fix the supply-chain problem. It helps a leader or planner identify the decision trapped inside it. Starting with one recent exception, it guides the team through the trigger, decision owner, evidence, time window, stakes, reversibility, and consequences. It separates gathering facts from comparing options and from making a commitment that somebody must own.
+
+That distinction allows the skill to recommend one of three delegation boundaries: AI drafts and executes inside pre-approved rules; AI drafts and a human approves; or AI drafts while a human owns the decision. It can also conclude that the use case is not ready for AI because ownership, policy, process, or data must be repaired first.
+
+The output is a scoped problem statement and a structured recommendation—not an automatic technology prescription. Depending on the situation, the skill can produce a decision-to-delegation brief, use-case shortlist, workshop summary, bounded-pilot charter, or not-ready-for-AI report.
+
+![The supply-chain decision-to-delegation skill turns messy operational signals into a structured recommendation.](./assets/decision-to-delegation-social.png)
+
+Invoke `$supply-chain-decision-to-delegation` with one recent operating event and ask: **what decision is trapped inside this problem, and what—if anything—should be delegated to AI?**
+
 A useful problem statement starts with questions like these:
 
 | Ask this | It reveals |
